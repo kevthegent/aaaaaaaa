@@ -1,0 +1,18 @@
+<!ELEMENT Employeedb (employee+)>
+<!ELEMENT employee (Name,employee_id,age,Address,Mobileno,email,gender,date_of_joining,position,experience,Reason_to_join)>
+<!ATTLIST employee category (Noncleaningsection|cleaningsection) #REQUIRED>
+<!ATTLIST employee family (true|false) #REQUIRED>
+<!ATTLIST employee shift (day|night) #REQUIRED>
+<!ELEMENT Name (Fname,Lname)>
+<!ELEMENT Fname (#PCDATA)>
+<!ELEMENT Lname (#PCDATA)>
+<!ELEMENT employee_id (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Mobileno (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT date_of_joining (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT experience (#PCDATA)>
+<!ELEMENT Reason_to_join (#PCDATA)>
